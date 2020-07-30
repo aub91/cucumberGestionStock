@@ -1,25 +1,25 @@
-# language: en
-Feature: gherk
+# langue: fr
+Fonctionnalité: gherk
 
-	Scenario Outline: gherk
-		Given j'ai 1 lot de marchandises
-		And j'en récupère 2 autres
-		And je dois ajouter des <element>
-		And je détermine sa quantité
-		When je l'ajoute à mon stock
-		Then je dois avoir un minimum de marchandises
+	Plan du scénario: gherk
+		Étant donné que j'ai 1 lot de marchandises
+		Et j'en récupère 2 autres
+		Et je dois ajouter des <element>
+		Et je détermine sa quantité
+		Quand je l'ajoute à mon stock
+		Alors je dois avoir un minimum de marchandises
 
 		@JDD1
-		Examples:
+		Exemples:
 		| element |
 		| "Echelles" |
 
 		@JDD2
-		Examples:
+		Exemples:
 		| element |
 		| "Coffres" |
 
 		@JDD3
-		Examples:
+		Exemples:
 		| element |
 		| "Planches" |
